@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="utf-8" />
+    <title>Node Creative Project</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+
+</head>
+
+<body>
+    
+    <h1>Climbing in Utah</h1>
+    <h2>There are many great places to climb in utah. With all the mountains and national parks there are climbs that range to all climbing abilities.</h2>
+    <div id="app">
+        <h3>These are a few of my favorite places :</h3>
+        <img class="climbpic" src="/images/utahclimb.jpg" alt="Man climbing handing off rock">
+        <form v-on:submit.prevent="show">
+            <button class="buttonStyle" type="submit">Show</button>
+        </form>
+        
+        <ul>
+            <li v-for="place in places">
+                {{ place.name }}
+            </li>
+        </ul>
+        
+        
+        
+        
+        
+        
+    </div>
+
+
+    <footer>
+        <p>&copy; 2019 &bull; CS 260 &bull; <a href="https://github.com/MMagnum/creative-node/tree/master" target="_blank">GitHub</a>
+           &bull; Built by Marc Mangum</p>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+    <script src="javascripts/script.js"></script>
+    
+</body>
+    
+    
+</html>
